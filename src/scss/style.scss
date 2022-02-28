@@ -1,0 +1,11 @@
+body {
+    font-size: 20px;
+}
+
+header {
+    display: flex;
+    box-shadow: 1px 3px 5px 0px #00000070;
+    @media (max-width: 767px) {
+        font-size: 16px;
+    }
+}
