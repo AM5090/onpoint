@@ -8,7 +8,7 @@ import autoprefixer from "gulp-autoprefixer";
 import group_media from 'gulp-group-css-media-queries';
 import clean_css from 'gulp-clean-css';
 import rename from "gulp-rename";
-import uglify from 'gulp-uglify-es';
+import uglify from 'gulp-uglify';
 
 
 
@@ -64,6 +64,7 @@ function watchFiles(params) {
     watch([path.watch.html], html);
     watch([path.watch.css], css);
     watch([path.watch.js], js);
+    watch([path.watch.img], img);
 }
 
 function clean(params) {
@@ -111,9 +112,16 @@ function js() {
         .pipe(browsersync.stream());
 }
 
-let build = gulp.series(clean, gulp.parallel(js, css, html));
+function images() {
+    return src(path.src.img)
+        .pipe(dest(path.build.img))
+        .pipe(browsersync.stream());
+}
+
+let build = gulp.series(clean, gulp.parallel(images, js, css, html));
 
 export default gulp.parallel(build, watchFiles, browserSync);
+export const BuildImages = images;
 export const buildJs = js;
 export const buildCss = css;
 export const buildHtml = html;
