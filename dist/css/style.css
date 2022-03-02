@@ -1,10 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;
+
+400;700&display=swap");
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
 body {
-  font-family: sans-serif;
+  font-family: "Outfit", sans-serif;
   font-size: 14px;
   margin: 0;
 }
@@ -21,8 +24,11 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 20px 135px 5px;
+  padding: 20px 60px 5px;
   position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
 }
 
 .header_logo {
@@ -38,15 +44,118 @@ img {
   border-left: 1px solid #000;
 }
 
-.slide {
-  background-image: url("../img/test_onpoint.png");
-  background-size: cover;
+.slide_track {
+  /*background-image: url('../img/test_onpoint.png');
   background-repeat: no-repeat;
+  background-size: contain;
+  padding: 20px 0;*/
+}
+
+.element-one {
+  position: absolute;
+  top: 60px;
+  left: -90px;
+  width: 200px;
+}
+
+.element-two {
+  position: absolute;
+  top: 100px;
+  right: 250px;
+  width: 70px;
+}
+
+.element-three {
+  position: absolute;
+  top: 30px;
+  right: 50px;
+  width: 70px;
+}
+
+.element-four {
+  position: absolute;
+  top: 22%;
+  right: 0;
+  width: 620px;
+  z-index: 2;
+}
+
+.element-five {
+  position: absolute;
+  top: 30%;
+  right: 100px;
+  width: 105px;
+  z-index: 2;
+}
+
+.element-six {
+  position: absolute;
+  bottom: 23%;
+  left: 24px;
+  width: 95px;
+}
+
+.element-seven {
+  position: absolute;
+  bottom: 6%;
+  left: -54px;
+  width: 310px;
+}
+
+.element-eight {
+  position: absolute;
+  bottom: 7%;
+  left: 32%;
+  width: 100px;
+}
+
+.element-nine {
+  position: absolute;
+  bottom: 1%;
+  right: 32%;
+  width: 200px;
+}
+
+.slide-one_text-wrapp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 100vw;
   height: 100vh;
 }
 
-.slide_item {
+.slide-one_text {
   width: 100%;
-  height: 100%;
+  max-width: 1024px;
+  padding: 0 70px 50px;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.slide-one_subtitle {
+  font-size: 1.5rem;
+  font-weight: 100;
+  margin: 0 0 20px 0;
+}
+
+.slide-one_title {
+  font-size: 6rem;
+  font-weight: 100;
+  margin: 0;
+  width: 100%;
+}
+
+.slide-one_button {
+  border: none;
+  background: none;
+  width: 260px;
+  position: absolute;
+  right: 195px;
+  bottom: 72px;
 }

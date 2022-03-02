@@ -64,7 +64,6 @@ function watchFiles(params) {
     watch([path.watch.html], html);
     watch([path.watch.css], css);
     watch([path.watch.js], js);
-    watch([path.watch.img], img);
 }
 
 function clean(params) {
