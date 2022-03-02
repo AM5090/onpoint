@@ -24,7 +24,7 @@ img {
     width: 100%;
     top: 0;
     left: 0;
-
+    z-index: 10;
     &_logo {
         width: 20px;
         height: 20px;
@@ -104,7 +104,7 @@ img {
     }
 }
 
-.slide-one{
+.slide-one {
     &_text-wrapp {
         display: flex;
         align-items: center;
@@ -137,5 +137,167 @@ img {
         position: absolute;
         right: 195px;
         bottom: 72px;
+    }
+}
+
+.slide-two {
+
+    position: relative;
+    background-color: rgba(204, 204, 204, 0.596);
+    overflow: hidden;
+    &_scroll-wrapp {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &_scroll {
+        padding: 0 155px 0 70px;
+        z-index: 2;
+    }
+    &_title {
+        font-size: 26px;
+        text-transform: uppercase;
+        width: 195px;
+        margin-bottom: 16px;
+    }
+    &_info {
+        display: flex;
+    }
+    &_range {
+        position: relative;
+        width: 80px;
+
+        input[type=range] {
+            position: relative;
+            top: 47%;
+            left: -180px;
+            transform: rotate(90deg);
+            -webkit-appearance: none;
+            width: 370px;
+        }
+
+        input[type=range]:focus {
+            outline: none;
+        }
+
+        input[type=range]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            height: 18px;
+            width: 80px;
+            border-radius: 7px;
+            background: #cf578d;
+            cursor: pointer;
+            margin-top: -7px;
+            box-shadow: inset 1px -3px 8px 0 #000000b0, inset -2px 1px 6px 0 #ffffff;
+        }
+
+        input[type=range]::-webkit-slider-runnable-track {
+            width: 370px;
+            height: 4px;
+            cursor: pointer;
+            background: #000000;
+            border-radius: 2px;
+        }
+        
+    }
+    &_text {
+        font-size: 20px;
+        line-height: 1.5;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 40px;
+        height: 370px;
+        overflow: hidden;
+    }
+}
+
+.element {
+    &-one-2 {
+        position: absolute;
+        bottom: 20%;
+        right: -10%;
+        width: 260px;
+        opacity: .5;
+    }
+    &-two-2 {
+        position: absolute;
+        top: 48%;
+        right: -66%;
+        opacity: .5;
+    }
+    &-three-2 {
+        position: absolute;
+        top: 14%;
+        left: 38%;
+        width: 100%;
+    }
+    &-four-2 {
+        position: absolute;
+        top: 14%;
+        left: 58%;
+        width: 65%;
+        opacity: 0.5;
+    }
+    &-five-2 {
+        position: absolute;
+        top: 12%;
+        left: 72%;
+        width: 40%;
+        opacity: .5;
+    }
+}
+
+.slide-three {
+    &_content-wrapp {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: flex-end;
+        padding: 0 45px;
+    }
+    &_content {
+
+    }
+    &_image {
+        position: relative;
+    }
+    &_spray {
+        width: 226px;
+    }
+}
+.bubble {
+    &-one {
+        position: absolute;
+        width: 60px;
+    }
+    &-two {
+        position: absolute;
+        width: 60px;
+    }
+    &-three {
+        position: absolute;
+        width: 60px;
+    }
+    &-four {
+        position: absolute;
+        width: 60px;
+    }
+    &-five {
+        position: absolute;
+        width: 60px;
+    }
+    &-six {
+        position: absolute;
+        width: 60px;
+    }
+    &-seven {
+        position: absolute;
+        width: 60px;
+    }
+    &-eight {
+        position: absolute;
+        width: 60px;
     }
 }
