@@ -32,5 +32,5 @@ document.addEventListener('touchmove', (event) => {
 
     track.style.left = moveInterval + 'px';
     console.log('moveInterval', moveInterval);
-
+    console.log(trackPosition);
 });
