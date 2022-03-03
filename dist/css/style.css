@@ -58,6 +58,9 @@ img {
   background-image: url("../img/test_onpoint.png");
   background-repeat: no-repeat;
   background-size: cover;
+  -webkit-transition: 0.3s ease-out;
+  -o-transition: 0.3s ease-out;
+  transition: 0.3s ease-out;
   width: 3072px;
   overflow: hidden;
   position: relative;
