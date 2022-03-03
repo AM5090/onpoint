@@ -45,11 +45,24 @@ img {
   border-left: 1px solid #000;
 }
 
+.slide.slide-window {
+  width: 1024px;
+  height: 768px;
+  overflow: hidden;
+}
+
 .slide_track {
-  /*background-image: url('../img/test_onpoint.png');
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-image: url("../img/test_onpoint.png");
   background-repeat: no-repeat;
-  background-size: contain;
-  padding: 20px 0;*/
+  background-size: cover;
+  width: 3072px;
+  overflow: hidden;
+  position: relative;
+  top: 0;
+  left: 0;
 }
 
 .element-one {
@@ -117,6 +130,11 @@ img {
   width: 200px;
 }
 
+.slide-one {
+  width: 100vw;
+  position: relative;
+}
+
 .slide-one_text-wrapp {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -162,9 +180,8 @@ img {
 }
 
 .slide-two {
+  width: 100vw;
   position: relative;
-  background-color: rgba(204, 204, 204, 0.596);
-  overflow: hidden;
 }
 
 .slide-two_scroll-wrapp {
@@ -287,6 +304,11 @@ img {
   opacity: 0.5;
 }
 
+.slide-three {
+  width: 100vw;
+  position: relative;
+}
+
 .slide-three_content-wrapp {
   width: 100vw;
   height: 100vh;
@@ -296,7 +318,20 @@ img {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  padding: 0 45px;
+  padding: 0 0 0 48px;
+}
+
+.slide-three_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  grid-gap: 65px;
 }
 
 .slide-three_image {
@@ -304,45 +339,153 @@ img {
 }
 
 .slide-three_spray {
+  position: relative;
   width: 226px;
+  z-index: 2;
+}
+
+.slide-three_info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  grid-gap: 95px;
+  position: relative;
+}
+
+.slide-three_subtitle {
+  font-size: 24px;
+  text-transform: uppercase;
+  margin: 0 0 6px 0;
+  padding: 0 0 0 4px;
+}
+
+.slide-three_title {
+  font-size: 5rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin: 0;
+  line-height: 1;
+}
+
+.slide-three_text {
+  display: grid;
+  grid-template-columns: 420px 220px;
+  grid-template-rows: 150px 150px;
+  grid-gap: 20px 45px;
+  position: relative;
+  left: -112px;
+}
+
+.slide-three_text-item {
+  position: relative;
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 38px;
+  -webkit-filter: drop-shadow(5.446px 8.387px 125px rgba(157, 185, 198, 0.39));
+          filter: drop-shadow(5.446px 8.387px 125px rgba(157, 185, 198, 0.39));
+}
+
+.slide-three_text-item:first-child {
+  grid-row-start: 1;
+  grid-row-end: 3;
+  max-height: 78%;
+  text-align: -webkit-right;
+}
+
+.slide-three_text-item:first-child .slide-three_text-img {
+  left: 108px !important;
+}
+
+.slide-three_text-item:first-child .slide-three_text-block {
+  width: 77%;
+}
+
+.slide-three_text-item:last-child {
+  background-color: transparent;
+  padding: 27px 0 0;
+  fill: none;
+}
+
+.slide-three_text-img {
+  position: absolute;
+  width: 65px;
+  top: -35px;
+  left: 33px;
+}
+
+.slide-three_text-block {
+  font-size: 28px;
+  width: 100%;
+  text-align: left;
 }
 
 .bubble-one {
   position: absolute;
-  width: 60px;
+  width: 44px;
+  top: 18%;
+  left: 9%;
+  z-index: 2;
 }
 
 .bubble-two {
   position: absolute;
-  width: 60px;
+  width: 140px;
+  top: 32%;
+  right: -12%;
+  z-index: 2;
 }
 
 .bubble-three {
   position: absolute;
-  width: 60px;
+  width: 52px;
+  top: -4%;
+  right: 14%;
+  z-index: 2;
 }
 
 .bubble-four {
   position: absolute;
-  width: 60px;
+  width: 75px;
+  bottom: 18%;
+  right: -14%;
+  z-index: 2;
 }
 
 .bubble-five {
   position: absolute;
-  width: 60px;
+  width: 80px;
+  top: 10%;
+  right: 8%;
+  z-index: 4;
 }
 
 .bubble-six {
   position: absolute;
-  width: 60px;
+  width: 160px;
+  right: -18%;
+  bottom: 0%;
+  z-index: 4;
 }
 
 .bubble-seven {
   position: absolute;
-  width: 60px;
+  width: 50px;
+  top: 52%;
+  left: -21%;
+  z-index: 4;
 }
 
 .bubble-eight {
   position: absolute;
-  width: 60px;
+  width: 80px;
+  bottom: 14%;
+  left: -12%;
+  z-index: 4;
 }
